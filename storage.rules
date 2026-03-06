@@ -1,0 +1,10 @@
+rules_version = '2';
+// Cole estas regras no Firebase Console → Storage → Regras (e publique).
+// Permite que usuários autenticados leiam e enviem arquivos na pasta products/.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /products/{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

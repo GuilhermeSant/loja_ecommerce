@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-800 antialiased;
+  background-color: #f5f5f5;
+  background-image: url('https://res.cloudinary.com/ddeqskcks/image/upload/v1772670460/gray-simple-textured-design-background_iathwq.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Transições suaves globais para elementos interativos */
+button, a, input, [class*="hover:"] {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.hero-fade {
+  animation: heroFade 0.6s ease-in-out;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Transição suave do carrossel */
+.carousel-track {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out;
+}
