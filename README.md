@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Loja Fashion - E-commerce de Roupas
 
 Projeto de e-commerce em React (Vite) com Tailwind CSS, Firebase (Auth + Firestore) e roteamento com React Router.
@@ -82,3 +83,7 @@ Projeto de e-commerce em React (Vite) com Tailwind CSS, Firebase (Auth + Firesto
 ## Licença
 
 Uso livre para fins educacionais e portfólio.
+=======
+# loja_ecommerce
+Exemplo de pagina de loja para portifolio
+>>>>>>> c8655c88f98a1f9946925f1b484204bc10b4d6f1
